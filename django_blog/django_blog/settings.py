@@ -37,6 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    """
+    こうすることによって、blogsアプリケーションがdjango_blogプロジェクトのアプリケーションとして扱われるようになります。
+    これをしないと、この後アプリケーションをいくら編集してもプロジェクトに反映されませんので、アプリケーションを作ったら、
+    INSTALLED_APPSに追加することを忘れないようにしてください。
+    """
+    'blogs', 
 ]
 
 MIDDLEWARE = [
